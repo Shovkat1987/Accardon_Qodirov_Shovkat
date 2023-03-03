@@ -1,0 +1,95 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    min-width: 800px;
+}
+
+.content h1{
+    font-weight: 500;
+    color: #3E54AC;
+    margin-bottom: 30px;
+}
+
+.content__box{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.title{
+    background-color: #3E54AC;
+    color: #FFF;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.title:hover{
+    background-color: #4e65c2;
+    cursor: pointer;
+}
+
+.text{
+    background-color: #ECF2FF;
+    color: #3E54AC;
+    padding: 0 10px;
+    height: 0px;
+    transition: all 0.3s ease;
+}
+
+
+
+.text__acc{
+    padding: 20px 10px;
+    height: 60px;
+}
+
+
+.gg-chevron-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.title::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    right: 20px;
+    top: 25px;
+    transition: all 0.3s ease;
+}
+
+
+.title1::after{
+    transform: rotate(45deg);
+}
+
